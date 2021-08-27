@@ -1,4 +1,7 @@
 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 2rem;
     min-height: 58px;
     color: $white;
@@ -8,14 +11,27 @@ button{
     border: none;
 }
 
+.btn_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn_dl{
     background-color:$soft-blue ;
-    width: 193px;
-    margin-right: 16px;
-
+    width: 192px;
 }
 
 .btn_question{
     background-color:$purple ;
-    width: 139px;
+    width: 109px;
+    
+}
+
+.btn_dl_footer{
+    background-color:$purple ;
+    width: 193px;
+    margin-right: 16px;
+    z-index: 15;
 }
