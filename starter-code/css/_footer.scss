@@ -9,22 +9,60 @@ footer{
     background: url(/starter-code/assets/mobile/image-footer.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
+    text-align: center;
+    min-width: 400px;
+    min-height: 428px;
+    position: relative;
     
 
     & h2{
         position: relative;
+        width: 375px;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        color: $white;
+        margin-top: 92px;
+        
     }
-    & h2::before{
-        background-image: url(/starter-code/assets/desktop/design2.svg);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 10;
-    }
+
+    & p{
+        margin-top: 24px;
+        color: $white;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        width: 327px;
+        z-index: 1;
+        margin-bottom: 32px
+        
+    };
+}
+
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .design2{
-
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
 }
 
 
+.blue{
+    width: 100%;
+    min-height: 428px;
+    background-color: $soft-blue;
+    opacity: 85%;
+    position: absolute;
+    
+}

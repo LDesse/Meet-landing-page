@@ -21,6 +21,9 @@ button{
 .btn_dl{
     background-color:$soft-blue ;
     width: 192px;
+    & span{
+        color: #8FE3F9;
+    }
 }
 
 .btn_question{
@@ -34,4 +37,12 @@ button{
     width: 193px;
     margin-right: 16px;
     z-index: 15;
+    & span{
+        color: #D9B8FF;
+    }
+}
+
+span{
+    margin-left: 4px;
+   
 }
