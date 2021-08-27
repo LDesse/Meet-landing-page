@@ -47,6 +47,26 @@
   text-align: center;
 }
 
+.header_text h1 {
+  width: 270px;
+  margin-top: 48px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  color: #28283D;
+}
+
+.header_text p {
+  width: 327px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #87879D;
+}
+
 .design1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,7 +123,7 @@ button {
 
 .btn_question {
   background-color: #845eb0;
-  width: 109px;
+  width: 139px;
 }
 
 .btn_dl_footer {
@@ -168,7 +188,8 @@ span {
 }
 
 .main_text p {
-  width: 327px;
+  width: 321px;
+  min-height: 154px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -248,22 +269,27 @@ footer {
           align-items: center;
 }
 
-.design2 {
-  position: absolute;
-  z-index: 1;
-  margin: auto;
-  left: 50%;
-  top: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .blue {
   width: 100%;
   min-height: 428px;
   background-color: #4d96a8;
   opacity: 85%;
   position: absolute;
+}
+
+.blue::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 140px;
+  width: 56px;
+  background-image: url(/starter-code/assets/desktop/design2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 50%;
+  top: -10%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 * {

@@ -49,12 +49,7 @@ footer{
 }
 
 .design2{
-    position: absolute;
-    z-index: 1;
-    margin: auto;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, -50%);
+
 }
 
 
@@ -64,5 +59,17 @@ footer{
     background-color: $soft-blue;
     opacity: 85%;
     position: absolute;
-    
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        height: 140px;
+        width: 56px;
+        background-image: url(/starter-code/assets/desktop/design2.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: 50%;
+        top: -10%;
+        transform: translate(-50%, -50%);
+    }
 }
